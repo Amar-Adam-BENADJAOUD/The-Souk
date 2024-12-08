@@ -1,7 +1,7 @@
 // backend/server.js
 const express = require('express');
 const bodyParser = require('body-parser');
-const productsRoute = require('./routes/products');  // Correct path to products.js
+const productsRoute = require('./products');  // Correct path to products.js
 const app = express();
 
 const cors = require('cors');
