@@ -1,12 +1,13 @@
 // src/router/index.js
 /* eslint-disable */ 
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from 'C:/Users/Begum/the-souk/src/components/HomePage.vue';
-import LoginForm from 'C:/Users/Begum/the-souk/src/components/LoginForm.vue';
-import RegisterForm from 'C:/Users/Begum/the-souk/src/components/RegisterForm.vue';  // Import the register page component
-import ProductPage from 'C:/Users/Begum/the-souk/src/components/ProductPage.vue';  // Import the product page component
-import GroupPage from 'C:/Users/Begum/the-souk/src/components/GroupPage.vue';
-import SearchPage from 'C:/Users/Begum/the-souk/src/components/SearchPage.vue';
+import HomePage from '../components/HomePage.vue';
+import LoginForm from '../components/LoginForm.vue';
+import RegisterForm from '../components/RegisterForm.vue';
+import ProductPage from '../components/ProductPage.vue';
+import GroupPage from '../components/GroupPage.vue';
+import SearchPage from '../components/SearchPage.vue';
+
 
 const routes = [
   {
