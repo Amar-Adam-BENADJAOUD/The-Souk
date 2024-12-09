@@ -1,6 +1,6 @@
 # the-souk IMPORTANT
 
-## Project setup
+## Project setup ( with the cmd, go in the location of your folder "the-souk")
 ```
 npm install
 ```
