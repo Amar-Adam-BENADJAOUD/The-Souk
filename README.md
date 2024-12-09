@@ -1,13 +1,13 @@
-# the-souk
+# the-souk IMPORTANT
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development ( run the front-end and the back-end simultaneously)
 ```
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
