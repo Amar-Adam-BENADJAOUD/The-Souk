@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="search-content">
       <h2>Search for Products</h2>
       <input v-model="searchQuery" placeholder="Search" />
       <button @click="searchProducts">Search</button>
@@ -28,3 +28,42 @@
   };
   </script>
   
+  <style>
+  div {
+  height: 10;
+}
+#search-content{
+  margin-top: 15%;
+}
+
+#search-content input{
+  height: 10px;
+}
+
+#search-content button{
+  color: white;
+  background-color: blueviolet;
+  border-color: blueviolet;
+  width: 5%;
+  height: 33px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Ajustez la valeur pour arrondir */
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#search-content button:hover{
+  cursor: pointer;
+  border-right: 4px solid rgb(63 63 63);
+  border-bottom: 4px solid rgb(63 63 63);
+}
+
+  #button{
+    width: 5%;
+    height: 5%;
+  }
+  
+  #button:hover{
+    cursor: pointer;
+  }
+</style>
