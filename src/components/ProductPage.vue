@@ -1,13 +1,13 @@
 <template>
-    <div>
+    <div id="product-content">
       <h2>Product Management</h2>
       <!-- Form to add a product -->
       <form @submit.prevent="addProduct">
         <input v-model="product.name" type="text" placeholder="Product Name" required />
-        <input v-model="product.price" type="number" placeholder="Price" required />
-        <textarea v-model="product.description" placeholder="Product Description" required></textarea>
+        <input v-model="product.price" type="number" placeholder="Price" required /><br><br>
+        <textarea v-model="product.description" placeholder="Product Description" required></textarea><br><br>
         <button type="submit">Add Product</button>
-      </form>
+      </form><br><br><br>
   
       <!-- Message to display success or failure -->
       <div v-if="message" class="message">{{ message }}</div>
@@ -80,8 +80,52 @@
   </script>
   
   <style>
+#product-content textarea{
+  width: 33%;
+  height: 50%;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Ajustez la valeur pour arrondir */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#product-content button{
+  color: white;
+  background-color: blueviolet;
+  border-color: blueviolet;
+  border-radius: 5%;
+  width: 10%;
+  height: 13%;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Ajustez la valeur pour arrondir */
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#product-content button:hover{
+  cursor: pointer;
+  border-right: 4px solid rgb(63 63 63);
+  border-bottom: 4px solid rgb(63 63 63);
+}
+
+  div {
+  height: 10; /* ou une autre hauteur relative */
+}
+#product-content{
+  margin-top: 11%;
+}
+
+  #button{
+    width: 5%;
+    height: 5%;
+  }
+  
+  #button:hover{
+    cursor: pointer;
+  }
+
   .message {
-    color: green;
+    color: red;
     font-weight: bold;
   }
   </style>
