@@ -22,3 +22,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Link for the api request
+
+for a send request : http://localhost:5000/api/products/add 
+for a get request : http://localhost:5000/api/products
+
