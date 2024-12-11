@@ -2,6 +2,7 @@
 /* eslint-disable */ 
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from '../components/HomePage.vue';
+import AboutPage from '../components/AboutPage.vue';
 import LoginForm from '../components/LoginForm.vue';
 import RegisterForm from '../components/RegisterForm.vue';
 import ProductPage from '../components/ProductPage.vue';
@@ -14,6 +15,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomePage,  // Set HomePage as the default page
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutPage,  // Set AboutPage as the default page
   },
   {
     path: '/login',
